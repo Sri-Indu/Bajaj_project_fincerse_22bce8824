@@ -4,10 +4,11 @@ const app = express();
 
 app.use(bodyParser.json());
 
-const fullName = "john_doe"; // <-- change to your full name (lowercase, with underscore)
-const dob = "17091999"; // <-- change to ddmmyyyy
-const email = "john@xyz.com"; // <-- change to your email
-const rollNumber = "ABCD123"; // <-- change to your roll number
+// Personal details - replace placeholders with your info
+const fullName = "gaddam_sri_indu_hasini"; // lowercase with underscores
+const dob = "01102004"; // ddmmyyyy
+const email = "hasini.22bce8824@vitapstudent.ac.in";
+const rollNumber = "22BCE8824";
 
 app.post("/bfhl", (req, res) => {
   try {
@@ -73,7 +74,7 @@ app.post("/bfhl", (req, res) => {
   }
 });
 
-// root route
+// Root route
 app.get("/", (req, res) => {
   res.send("BFHL API is running ✅");
 });
